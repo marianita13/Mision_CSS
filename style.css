@@ -35,3 +35,149 @@ footer{
     text-align: center;
     font-weight: 700;
 }
+
+/* --------------- CLIENTES JULIAN --------------- */
+
+.fondo--nuestrosClientes{
+    background-image: url("./asset/hero-image-customers.jpg");background-position: cover;
+    background-size: 100% 100%;
+    height: 100vh;
+}
+
+.fondo--nuestrosClientesDifuminado{
+    background-color: var(--whitetransparent);
+    height: 100%;
+}
+
+.contenedor__titulo--nuestrosClientes{
+    display: flex;
+    justify-content: center;
+}
+
+.titulo--border{
+    padding: 10px;
+    border-bottom: solid 2px black;
+}
+
+.contenedor--cliente{
+    background-color: var(--whitetransparent);
+    display: block;
+    overflow: hidden;
+    width: 50%;
+    height: 50%;
+    margin: 15% auto;
+}
+
+.contenedor--fotoPerfil{
+    display: flex;
+    justify-content: center;
+}
+
+.fotoPerfil--cliente{
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    border-radius: 50%;    
+}
+
+.contenedor--opinionCliente{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.contenedor--opinionCliente p{
+    text-align: center;
+}
+
+.contenedor--descripcionCliente{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+/* --------------- FORMULARIO JULIAN --------------- */
+
+.contenedor__fondo--contacto{
+    background-image: url(--white);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor__titulo--contacto{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.titulo--borderContacto{
+    padding: 10px;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+}
+
+.contenedor__opciones{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.contenedor__opciones--contacto{
+    width: 300px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    border: solid 1px var(--gray);
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px var(--darkgray);
+}
+
+.contendor__formulario{
+    width: 600px;
+    height: 300px;
+    margin-top: 50px;
+    padding: 10px;
+    overflow: hidden;
+    border: solid 1px var(--gray);
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px var(--darkgray);
+}
+
+form input{
+    width: 48%;
+    height: 30px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: solid 1px var(--blackTransparent);
+    margin: 20px 0;
+}
+
+textarea{
+    width: 100%;
+    height: 150px;
+}
+.contenedor__boton{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.botonFormulario{    
+    width: 200px;
+    height: 40px;
+    color: var(--white);
+    background-color: var(--fucshia);
+    border-radius: 20px;
+    border: none;
+}
+
+.botonFormulario:hover{
+    color: var(--fucshia);
+    background-color: var(--white);
+    border: solid 1px var(--fucshia);
+}
