@@ -143,22 +143,43 @@ body{
 
 .portafolio__contenedor__item{
     background-size: cover;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
 }
 
-.portafolio__contenedor__item:hover::after{
-    transform: translateY(0);
+.transparencia{
+    height: 100%;
+    width: 100%;
+    background-color: var(--fucshia2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%); 
 }
 
-.portafolio__contenedor__item::after{
-    content: "";
-    background-color: var(--fucshia2);
-    position: absolute;
-    inset: 0;
-    display: grid;
-    place-items: center;
-    transform: translateY(-100%);
+.portafolio__contenedor__marco{
+    height: 90%;
+    width: 90%;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: var(--white);
+    padding: 0 1.3rem;
+}
+
+.portafolio__contenedor__marco__title{
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.portafolio__contenedor__item:hover .transparencia{
+    transform: translateY(0%); 
+    transition: all 0.6s;
 }
 
 .portafolio__imagen__1{
