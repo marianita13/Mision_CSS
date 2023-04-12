@@ -17,7 +17,7 @@
     --blackTransparent:hsla(0, 0%, 0%, 0.822);
     --darkgray:hsl(0, 1%, 50%);
     --darkgray2:hsl(0, 1%, 22%);
-}
+}   
 
 html,body{
     width: 100%;
@@ -28,6 +28,163 @@ body{
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
 }
+
+/* servicios */
+.servicios{
+    padding-top: 1rem;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--whitetransparent);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.servicios__title{
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.servicios__hr{
+    width: 16%;
+    border: 1px solid var(--fucshia);
+}   
+
+.servicios__contenedor{
+    margin-top: 9%;
+    height: 70%;
+    width: 82%;
+}
+
+.servicios__contenedor__row{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.servicios__contenedor__item{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.servicios__contenedor__item__imagen{
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.servicios__contenedor__item__parrafo{
+    font-size: 1.27rem;
+    text-align: center;
+    font-style: italic;
+}
+
+.imagen__programacion{
+    background-image: url(./asset/service-code.svg);
+}
+
+.imagen__diseño{
+    background-image: url(./asset/service-design.svg);
+}
+
+.imagen__wpo{
+    background-image: url(./asset/service-wpo.svg);
+}
+
+.imagen__seo{
+    background-image: url(./asset/service-seo.svg);
+}
+
+.imagen__smo{
+    background-image: url(./asset/service-smo.svg);
+}
+
+.imagen__hosting{
+    background-image: url(./asset/service-hosting.svg);
+}
+
+/* portafolio */
+.portafolio{
+    padding-top: 1rem;
+    height: 100vh;
+    width: 100%; 
+    background-color: var(--gray);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.portafolio__hr{
+    width: 10.5%;
+    border: 1px solid var(--fucshia);
+}   
+
+.portafolio__title{
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.portafolio__contenedor{
+    margin-top: 1.5rem;
+    height: 90%;
+    width: 60%;     
+    display: grid;
+    grid-template-areas: 
+    "item1 item2 item3"
+    "item4 item5 item6";
+} 
+
+.portafolio__contenedor__item{
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.portafolio__contenedor__item:hover::after{
+    transform: translateY(0);
+}
+
+.portafolio__contenedor__item::after{
+    content: "";
+    background-color: var(--fucshia2);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(-100%);
+}
+
+.portafolio__imagen__1{
+    background-image: url(./asset/portfolio-1.jpg);
+}
+
+.portafolio__imagen__2{
+    background-image: url(./asset/portfolio-2.jpg);
+}
+
+.portafolio__imagen__3{
+    background-image: url(./asset/portfolio-3.jpg);
+}
+
+.portafolio__imagen__4{
+    background-image: url(./asset/portfolio-4.jpg);
+}
+
+.portafolio__imagen__5{
+    background-image: url(./asset/portfolio-5.jpg);
+}
+
+.portafolio__imagen__6{
+    background-image: url(./asset/portfolio-6.jpg);
+}
+
 
 footer{
     background-color: var(--blue);
