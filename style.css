@@ -35,3 +35,159 @@ footer{
     text-align: center;
     font-weight: 700;
 }
+
+/* mariana */
+
+.logo_nav{
+    display: flex;
+    flex-direction: row;
+    padding-left: 38px;
+}
+.nombre_logo{
+    font-family: 'Raleway', sans-serif;
+    color: var(--white);
+    font-weight: 600;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo_inicio{
+    height: 50px;
+    width: 50px;
+    background-image: url(./asset/logo.png);
+    background-position: 50%;
+    border-radius:50%;
+    margin-bottom: 10px;
+}
+
+nav{
+    width: 100%;
+    background-color: var(--blue);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+.navbar{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    gap: 30px;
+    padding-right: 38px;
+    font-weight: 700;
+}
+.inicio{
+    text-decoration: none;
+    color: var(--fucshia);
+    
+}
+.inicio:hover{
+    color: var(--white);
+}
+
+header{
+    height: 100%;
+    background-image: url(./asset/background__welcome.jpg);
+    background-size: cover;
+    color: var(--white);
+    font-weight: 700;
+}
+
+.inicio_texto{
+    background-color: var(--blackTransparent);
+    height: 100%;
+    display: flex;
+    font-size:100px;
+    font-weight: 800;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.bienvenidos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact_inicio{
+    border-radius: 22px;
+    height: 6%;
+    width: 15%;
+    background-color: var(--fucshia);
+    border: none;
+    color: var(--white);
+    font-size: large;
+    font-weight: 600;
+}
+
+.contact_inicio:hover{
+    background-color: var(--white) ;
+    color: var(--fucshia);
+}
+
+/* acerca */
+
+.acerca{
+    background-color: var(--gray);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:repeat(2, 1fr) ;
+    padding-top: 15px;
+}
+
+.info_acerca{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.imagen_acerca{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    object-fit:contain;
+}
+/* .imagen_perfil{
+    width: 70%;
+    height: 100%;
+} */
+
+.habilidades_acerca{
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+
+.boton_acerca{
+    grid-row: 2/3;
+    grid-column: 1/4;
+    display: flex;
+    align-items: center;
+}
+.descargar{
+    border-radius: 22px;
+    height: 10%;
+    width: 15%;
+    background-color: var(--fucshia);
+    border: none;
+    color: var(--white);
+    font-size: large;
+    font-weight: 600;
+    margin-left: 12px;
+}
+
+.text_acerca{
+    font-weight: 200;
+    font-style: italic;
+    text-align: end;
+    word-spacing: 3px;
+}
+.tittle_acerca{
+    font-weight: 600;
+    text-align: end;
+}
+.web_developer{
+    font-size: 13px;
+}
