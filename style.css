@@ -43,8 +43,8 @@ footer {
 
 .fondo--nuestrosClientes {
     background-image: url("./asset/hero-image-customers.jpg");
-    background-position: cover;
-    background-size: 100% 100%;
+    background-position: center;
+    background-size: cover;
     height: 100vh;
 }
 
@@ -56,20 +56,22 @@ footer {
 .contenedor__titulo--nuestrosClientes {
     display: flex;
     justify-content: center;
+    padding: 12px;
 }
 
 .titulo--border {
     padding: 10px;
-    border-bottom: solid 2px black;
+    border-top: solid 2px var(--fucshia);
+    border-bottom: solid 2px var(--fucshia);
 }
 
 .contenedor--cliente {
     background-color: var(--whitetransparent);
     display: block;
     overflow: hidden;
-    width: 45%;
-    height: 43%;
-    margin: 8% auto;
+    width: 44%;
+    height: 48%;
+    margin: 6% auto;
 }
 
 .contenedor--fotoPerfil {
@@ -88,7 +90,7 @@ footer {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 5px 50px 15px 50px;
+    padding: 5px 60px 15px 60px;
 }
 
 .contenedor--descripcionCliente {
@@ -96,6 +98,10 @@ footer {
     align-items: center;
     flex-direction: column;
     margin-bottom: 20px;
+}
+
+.contenedor--nombreCliente{
+    color: var(--fucshia);
 }
 
 .contenedor--estrellas {
@@ -118,13 +124,13 @@ footer {
 .contenedor__titulo--contacto {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    padding: 12px;
 }
 
 .titulo--borderContacto {
     padding: 10px;
-    border-top: solid 2px black;
-    border-bottom: solid 2px black;
+    border-top: solid 2px var(--fucshia);
+    border-bottom: solid 2px var(--fucshia);
 }
 
 .contenedor__opciones {
@@ -144,6 +150,10 @@ footer {
     border: solid 1px var(--gray);
     border-radius: 10px;
     box-shadow: 2px 2px 12px var(--darkgray);
+}
+
+.contenedor__opciones--contacto--img{
+    margin-bottom: 10px;
 }
 
 .contendor__formulario {
@@ -167,12 +177,12 @@ form input {
     margin: 20px 0;
 }
 
-form input[type="text "] {
+form input[type="text"] {
     width: 49%;
     margin-right: 11px;
 }
 
-form input[type="email "] {
+form input[type="email"] {
     width: 49%;
 }
 
@@ -197,10 +207,12 @@ textarea {
     background-color: var(--fucshia);
     border-radius: 40px;
     border: none;
+    transition: all 0.6s;
 }
 
 .botonFormulario:hover {
     color: var(--fucshia);
     background-color: var(--white);
     border: solid 1px var(--fucshia);
+    transition: all 0.6s;
 }
