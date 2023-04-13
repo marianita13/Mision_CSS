@@ -29,13 +29,6 @@ body{
     font-size: 18px;
 }
 
-footer{
-    background-color: var(--blue);
-    color: var(--white);
-    text-align: center;
-    font-weight: 700;
-}
-
 /* mariana */
 
 .logo_nav{
@@ -272,4 +265,11 @@ header{
 }
 .web_developer{
     font-size: 13px;
+}
+
+footer{
+    background-color: var(--blue);
+    color: var(--white);
+    text-align: center;
+    font-weight: 700;
 }
