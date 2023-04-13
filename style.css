@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap');
 
 /* reset */
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
-    --fucshia: hsl(333, 100%, 43%);
-    --fucshia2: hsla(333, 100%, 43%, 0.548);
+:root {
+    --fucshia:hsl(333, 100%, 43%);
+    --fucshia2:hsla(333, 100%, 43%, 0.548);
     --white:hsl(0, 0%, 100%);
-    --whitetransparent:hsla(0, 0%, 100%, 0.741);
+    --whitetransparent: hsla(0, 0%, 100%, 0.741);
     --gray:hsl(0, 8%, 91%);
     --blue:hsl(227, 65%, 16%);
     --blackTransparent:hsla(0, 0%, 0%, 0.822);
@@ -19,12 +20,13 @@
     --darkgray2:hsl(0, 1%, 22%);
 }   
 
-html,body{
+html,
+body {
     width: 100%;
     height: 100%;
 }
 
-body{
+body {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
 }
@@ -445,9 +447,606 @@ header{
     font-size: 13px;
 }
 
-footer{
+/* servicios */
+.servicios{
+    padding-top: 1rem;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--whitetransparent);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.servicios__title{
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.servicios__hr{
+    width: 16%;
+    border: 2px solid var(--fucshia);
+}   
+
+.servicios__contenedor{
+    margin-top: 9%;
+    height: 70%;
+    width: 82%;
+}
+
+.servicios__contenedor__row{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.servicios__contenedor__item{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.servicios__contenedor__item__imagen{
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.servicios__contenedor__item__parrafo{
+    font-size: 1.27rem;
+    text-align: center;
+    font-style: italic;
+}
+
+.imagen__programacion{
+    background-image: url(./asset/service-code.svg);
+}
+
+.imagen__diseño{
+    background-image: url(./asset/service-design.svg);
+}
+
+.imagen__wpo{
+    background-image: url(./asset/service-wpo.svg);
+}
+
+.imagen__seo{
+    background-image: url(./asset/service-seo.svg);
+}
+
+.imagen__smo{
+    background-image: url(./asset/service-smo.svg);
+}
+
+.imagen__hosting{
+    background-image: url(./asset/service-hosting.svg);
+}
+
+/* portafolio */
+.portafolio{
+    padding-top: 1rem;
+    height: 100vh;
+    width: 100%; 
+    background-color: var(--gray);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.portafolio__hr{
+    width: 10.5%;
+    border: 2px solid var(--fucshia);
+}   
+
+.portafolio__title{
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.portafolio__contenedor{
+    margin-top: 1.5rem;
+    height: 90%;
+    width: 60%;     
+    display: grid;
+    grid-template-areas: 
+    "item1 item2 item3"
+    "item4 item5 item6";
+} 
+
+.portafolio__contenedor__item{
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.transparencia{
+    height: 100%;
+    width: 100%;
+    background-color: var(--fucshia2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%); 
+}
+
+.portafolio__contenedor__marco{
+    height: 90%;
+    width: 90%;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: var(--white);
+    padding: 0 1.3rem;
+}
+
+.portafolio__contenedor__marco__title{
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.portafolio__contenedor__item:hover .transparencia{
+    transform: translateY(0%); 
+    transition: all 0.6s;
+}
+
+.portafolio__imagen__1{
+    background-image: url(./asset/portfolio-1.jpg);
+}
+
+.portafolio__imagen__2{
+    background-image: url(./asset/portfolio-2.jpg);
+}
+
+.portafolio__imagen__3{
+    background-image: url(./asset/portfolio-3.jpg);
+}
+
+.portafolio__imagen__4{
+    background-image: url(./asset/portfolio-4.jpg);
+}
+
+.portafolio__imagen__5{
+    background-image: url(./asset/portfolio-5.jpg);
+}
+
+.portafolio__imagen__6{
+    background-image: url(./asset/portfolio-6.jpg);
+}
+
+
+/* mariana */
+
+.logo_nav{
+    display: flex;
+    flex-direction: row;
+    padding-left: 38px;
+}
+.nombre_logo{
+    font-family: 'Raleway', sans-serif;
+    color: var(--white);
+    font-weight: 600;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo_inicio{
+    height: 50px;
+    width: 50px;
+    background-image: url(./asset/logo.png);
+    background-position: 50%;
+    border-radius:50%;
+    margin-bottom: 10px;
+}
+
+nav{
+    width: 100%;
+    background-color: var(--blue);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+.navbar{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    gap: 30px;
+    padding-right: 38px;
+    font-weight: 700;
+}
+.inicio{
+    text-decoration: none;
+    color: var(--fucshia);
+    transition: all 0.6s;
+}
+.inicio:hover{
+    color: var(--white);
+    transition: all 0.6s;
+}
+
+header{
+    height: 100%;
+    background-image: url(./asset/background__welcome.jpg);
+    background-size: cover;
+    color: var(--white);
+    font-weight: 700;
+}
+
+.inicio_texto{
+    background-color: var(--blackTransparent);
+    height: 100%;
+    display: flex;
+    font-size:100px;
+    font-weight: 800;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.bienvenidos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact_inicio{
+    border-radius: 22px;
+    height: 6%;
+    width: 15%;
+    background-color: var(--fucshia);
+    border: none;
+    color: var(--white);
+    font-size: large;
+    font-weight: 600;
+    transition: all 0.6s;
+}
+
+.contact_inicio:hover{
+    background-color: var(--white) ;
+    color: var(--fucshia);
+    border: 2px solid var(--fucshia);
+    transition: all 0.6s;
+}
+
+/* acerca */
+
+.acerca{
+    background-color: var(--gray);
+}
+
+.acerca2{
+    background-color: var(--gray);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:1fr;
+    padding-top: 20px;
+}
+
+.info_acerca{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    height: 80%;
+    padding-right: 20px;
+}
+
+.imagen_acerca{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    padding-top: 0;
+    height: 80%;
+}
+.imagen_perfil{
+    width: 97%;
+    height: 100%;
+}
+
+.habilidades_acerca{
+    grid-column: 3/4;
+    height: 80%;
+}
+
+.desarrollo_web{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+}
+
+.diseño_web{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+}
+
+.WPO{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+}
+
+.backend{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+}
+
+.marketing{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+}
+
+.tittle_habs{
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.progress-bar1{
+    margin-bottom: 12px;
+    width: 97%;
+    height: 20px;
+    background: linear-gradient(to right, #969696 90%, #000000 10%);
+}
+.progress-bar2{
+    margin-bottom: 12px;
+    width: 97%;
+    height: 20px;
+    background: linear-gradient(to right, #969696 85%, #000000 15%);
+}
+.progress-bar3{
+    margin-bottom: 12px;
+    width: 97%;
+    height: 20px;
+    background: linear-gradient(to right, #969696 80%, #000000 20%);
+}
+.progress-bar4{
+    margin-bottom: 15px;
+    width: 97%;
+    height: 20px;
+    background: linear-gradient(to right, #969696 75%, #000000 25%);
+}
+.progress-bar5{
+    margin-bottom: 15px;
+    width: 97%;
+    height: 20px;
+    background: linear-gradient(to right, #969696 60%, #000000 40%);
+}
+
+
+.boton_acerca{
+    height: 100px
+}
+.descargar{
+    border-radius: 25px;
+    height: 50px;
+    width: 15%;
+    background-color: var(--fucshia);
+    border: none;
+    color: var(--white);
+    font-size: large;
+    font-weight: 600;
+    margin-left: 12px;
+}
+
+.descargar:hover{
+    border: 1px solid var(--fucshia);
+    background-color: var(--white) ;
+    color: var(--fucshia);
+}
+
+.text_acerca{
+    font-weight: 400;
+    font-style: italic;
+    text-align: end;
+    word-spacing: 3px;
+}
+.tittle_acerca{
+    font-weight: 600;
+    text-align: end;
+}
+.web_developer{
+    font-size: 13px;
+}
+
+/* --------------- CLIENTES JULIAN --------------- */
+
+.fondo--nuestrosClientes {
+    background-image: url("./asset/hero-image-customers.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.fondo--nuestrosClientesDifuminado {
+    background-color: var(--whitetransparent);
+    height: 100%;
+}
+
+.contenedor__titulo--nuestrosClientes {
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+}
+
+.titulo--border {
+    padding: 10px;
+    border-top: solid 2px var(--fucshia);
+    border-bottom: solid 2px var(--fucshia);
+}
+
+.contenedor--cliente {
+    background-color: var(--whitetransparent);
+    display: block;
+    overflow: hidden;
+    width: 44%;
+    height: 48%;
+    margin: 6% auto;
+}
+
+.contenedor--fotoPerfil {
+    display: flex;
+    justify-content: center;
+}
+
+.fotoPerfil--cliente {
+    width: 160px;
+    height: 160px;
+    margin: 20px 0 10px 0;
+    border-radius: 50%;
+}
+
+.contenedor--opinionCliente {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 5px 60px 15px 60px;
+}
+
+.contenedor--descripcionCliente {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.contenedor--nombreCliente{
+    color: var(--fucshia);
+}
+
+.contenedor--estrellas {
+    display: flex;
+    gap: 35px;
+    margin-top: 20px;
+}
+
+
+/* --------------- FORMULARIO JULIAN --------------- */
+
+.contenedor__fondo--contacto {
+    background-image: url(--white);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor__titulo--contacto {
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+}
+
+.titulo--borderContacto {
+    padding: 10px;
+    border-top: solid 2px var(--fucshia);
+    border-bottom: solid 2px var(--fucshia);
+}
+
+.contenedor__opciones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.contenedor__opciones--contacto {
+    width: 380px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px var(--gray);
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px var(--darkgray);
+}
+
+.contenedor__opciones--contacto--img{
+    margin-bottom: 10px;
+}
+
+.contendor__formulario {
+    width: 820px;
+    height: 400px;
+    margin-top: 50px;
+    padding: 8px;
+    overflow: hidden;
+    border: solid 1px var(--gray);
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px var(--darkgray);
+}
+
+form input {
+    height: 30px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    font-size: 18px;
+    border-bottom: solid 1px var(--blackTransparent);
+    margin: 20px 0;
+}
+
+form input[type="text"] {
+    width: 49%;
+    margin-right: 11px;
+}
+
+form input[type="email"] {
+    width: 49%;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    font-size: 18px;
+}
+
+.contenedor__boton {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.botonFormulario {
+    width: 280px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--fucshia);
+    border-radius: 40px;
+    border: none;
+    transition: all 0.6s;
+}
+
+.botonFormulario:hover {
+    color: var(--fucshia);
+    background-color: var(--white);
+    border: solid 1px var(--fucshia);
+    transition: all 0.6s;
+}
+
+/* --------------- FOOTER  --------------- */
+
+footer {
     background-color: var(--blue);
     color: var(--white);
     text-align: center;
     font-weight: 700;
 }
+
